@@ -10,6 +10,7 @@ const shopify = new Shopify({
     accessToken: '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',
     apiVersion:'2024-10'
 })
+// madhanprasath
 
 const funOps = async () => {
     try {
