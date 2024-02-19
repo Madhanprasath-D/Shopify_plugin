@@ -10,25 +10,12 @@ const shopify = new Shopify({
     accessToken: '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',
     apiVersion:'2024-10'
 })
-// madhanprasath
+// madhanprasath 
 
 const funOps = async () => {
     try {
         const data = await shopify.product.list({limit:5})
-        console.log(data)
-        // if (!fs.existsSync(path.join(__dirname, 'DataFiles'))) {
-        //     await fspromise.mkdir(path.join(__dirname, 'DataFiles'));
-        //     console.log("DataFile created");
-        // }
-        // else {
-        //     await fspromise.appendFile(path.join(__dirname, 'DataFiles', 'data.json'), JSON.stringify(data, null ,4), (err) => {
-        //         if (err) {
-        //             console.error("Error in writing file")
-        //             process.exit(1)
-        //         }
-        //         console.log("file appended");
-        //     })
-        // }
+        seprate_json(data)
     }
     catch (err) {
         console.error("Error in data fetching", err)
@@ -48,3 +35,16 @@ funOps();
 
 //https://038099fc9e63fd9c3a5150e01315288e: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@da7000.myshopify.com/admin/api/2022-10/orders.json
 
+
+
+// specified_data['Name']=rawdata.first_name+rawdata.last_name;
+//             specified_data['Customer_id']=rawdata.customer.id;
+//             specified_data['Email']=rawdata.customer.email;
+//             specified_data['Order_count']=rawdata.customer.orders_count;
+//             specified_data['Total_spend']=rawdata.customer.total_spend
+//             specified_data['Order_detials']=[]
+//             specified_data.Order_detials['Order_id']=rawdata.id;
+//             specified_data.Order_detials['Created_at']=rawdata.created_at;
+//             specified_data.Order_detials['Total_price']=rawdata.current_total_price;
+//             specified_data.Order_detials['Order_Number']=rawdata.order_Number;
+//             specified_data.Order_detials['Discount']=rawdata.discount;

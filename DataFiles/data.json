@@ -1,1 +1,11 @@
-[]
+[
+    {
+        "Customer_name": "Madhanprasathmadhanprasath786@gmail.com",
+        "Customer_id": "123456789",
+        "Email": 1,
+        "Order_count": 500,
+        "Order_detials": [
+            1
+        ]
+    }
+]
