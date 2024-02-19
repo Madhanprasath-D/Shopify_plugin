@@ -1,11 +1,22 @@
 [
     {
-        "Customer_name": "Madhanprasathmadhanprasath786@gmail.com",
-        "Customer_id": "123456789",
-        "Email": 1,
-        "Order_count": 500,
+        "Customer_id": 5699829039153,
+        "Created_at": "2024-01-22T23:06:41+05:30",
+        "Order_count": 0,
+        "Total_spent": 0,
         "Order_detials": [
-            1
+            {
+                "Order_id": 4235598463025,
+                "Created_at": "2024-02-19T16:29:56+05:30",
+                "Total_cost": "800.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597185073,
+                "Created_at": "2024-02-19T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            }
         ]
     }
 ]

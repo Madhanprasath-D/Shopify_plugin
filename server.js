@@ -11,30 +11,27 @@ function save_data(file_name,json_data){
     console.log("content_saved");
 }
 
-const customer_data_json = (id,f_name,l_name,email,order_count,total_spent)=>{
+const customer_data_json = (id,created_at,order_count,total_spent)=>{
     var customer_data = {
-        "Customer_name":f_name+l_name,
         "Customer_id":id,
-        "Email":email,
+        "Created_at":created_at,
         "Order_count":order_count,
         "Total_spent":total_spent,
         "Order_detials":[]
     }
     return customer_data
 }
-const order_data_json =(id,created_at,amount,order_number,discount)=>{
+const order_data_json =(id,created_at,amount,discount)=>{
     var order_data = {
         "Order_id":id,
         "Created_at":created_at,
         "Total_cost":amount,
-        "Order_number":order_number,
         "Discount":discount,
     }
     return order_data
 
 }
-const extract_data = (raw_data)=>{
-    data = raw_data.orders
+const extract_data = (data)=>{
     index=0
     console.log("process start")
     const database = load_data('data.json')
@@ -45,30 +42,45 @@ const extract_data = (raw_data)=>{
             console.log(data[i])
             var flag=true;
             for(j=0;j<database.length;j++){
-                if(data[i].Customer_id ==database[j].Customer_id){
+                if(data[i].customer.id == database[j].Customer_id){
                     flag=false
                     index=j
                 }
             }
             console.log(flag)
             if(flag){
-                const customer_data = customer_data_json(data[i].Customer_id,data[i].Customer_name,
-                    data[i].Email,data[i].Order_count,data[i].Total_spent)
-                const order_data = order_data_json(data[i].Order_id,data[i].Created_at,
-                    data[i].Total_cost,data[i].Order_number,data[i].Discount)
+                const customer_data = customer_data_json(
+                    data[i].customer.id,
+                    data[i].customer.created_at,
+                    0,0
+                );
+                const order_data = order_data_json(
+                    data[i].id,
+                    data[i].created_at,
+                    data[i].current_subtotal_price,
+                    data[i].current_total_discounts
+                );
                 database.push(customer_data)
                 save_data('data.json', database)
-                // database.Order_detials[index].push(order_data)
-                // save_data('data.json', database)
-                database[index].Order_detials.push(1)
+
+                database[index].Order_detials.push(order_data)
                 save_data('data.json',database)
-                console.log(typeof database[index].Order_detials)
                 console.log("data writen in data.json file")
-                break
+            
             }
             else{
-                console.log("fail")
+                const order_data = order_data_json(
+                    data[i].id,
+                    data[i].created_at,
+                    data[i].current_subtotal_price,
+                    data[i].current_total_discounts
+                );
+                database[index].Order_detials.push(order_data)
+                
+                save_data('data.json',database)
+                console.log("data writen in data.json file")
             }
+
         }
     }
     catch (err){
@@ -76,5 +88,4 @@ const extract_data = (raw_data)=>{
     }
 }
 
-var data = load_data('raw.json')
-extract_data(data)
+module.exports = {extract_data}
