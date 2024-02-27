@@ -11,10 +11,11 @@ const shopify = new Shopify({
 // password 37c36588d6ea871ccece44f881ca45d4
 
 const data_fetch = async () => {
-    await shopify.order
+    await shopify.customer
         .list({ limit: 5 })
-        .then((orders) => {
-            ed(orders);
+        .then((customres) => {
+            //ed(orders);
+            console.log(customres)
         
         })
         .catch((err) => {

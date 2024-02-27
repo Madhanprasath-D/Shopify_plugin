@@ -2,8 +2,7 @@
     {
         "Customer_id": 5699829039153,
         "Created_at": "2024-01-22T23:06:41+05:30",
-        "Order_count": 0,
-        "Total_spent": 0,
+        "Total_spent": 800,
         "Order_detials": [
             {
                 "Order_id": 4235598463025,
@@ -15,6 +14,130 @@
                 "Order_id": 4235597185073,
                 "Created_at": "2024-02-19T16:18:13+05:30",
                 "Total_cost": "400.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597182074,
+                "Created_at": "2024-02-20T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597184075,
+                "Created_at": "2024-02-26T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            }
+        ]
+    },
+    {
+        "Customer_id": 5699829039154,
+        "Created_at": "2024-01-22T23:06:41+05:30",
+        "Total_spent": 800,
+        "Order_detials": [
+            {
+                "Order_id": 4235598463025,
+                "Created_at": "2024-01-17T16:29:56+05:30",
+                "Total_cost": "800.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597185073,
+                "Created_at": "2024-01-18T16:18:13+05:30",
+                "Total_cost": "200.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597182074,
+                "Created_at": "2024-01-20T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597184075,
+                "Created_at": "2024-01-25T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            }
+        ]
+    },
+    {
+        "Customer_id": 5699829039155,
+        "Created_at": "2024-01-22T23:06:41+05:30",
+        "Total_spent": 800,
+        "Order_detials": [
+            {
+                "Order_id": 4235598463025,
+                "Created_at": "2024-02-01T16:29:56+05:30",
+                "Total_cost": "800.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597185073,
+                "Created_at": "2024-02-05T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597182074,
+                "Created_at": "2024-02-07T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597184075,
+                "Created_at": "2024-02-15T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            }
+        ]
+    },
+    {
+        "Customer_id": 5699829039156,
+        "Created_at": "2024-01-22T23:06:41+05:30",
+        "Total_spent": 800,
+        "Order_detials": [
+            {
+                "Order_id": 4235598463025,
+                "Created_at": "2024-01-19T16:29:56+05:30",
+                "Total_cost": "800.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597185073,
+                "Created_at": "2024-02-22T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597182074,
+                "Created_at": "2024-01-25T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597184075,
+                "Created_at": "2024-02-10T16:18:13+05:30",
+                "Total_cost": "400.00",
+                "Discount": "0.00"
+            }
+        ]
+    },
+    {
+        "Customer_id": 5699829039157,
+        "Created_at": "2024-01-22T23:06:41+05:30",
+        "Total_spent": 800,
+        "Order_detials": [
+            {
+                "Order_id": 4235598463025,
+                "Created_at": "2024-01-30T16:29:56+05:30",
+                "Total_cost": "800.00",
+                "Discount": "0.00"
+            },
+            {
+                "Order_id": 4235597185073,
+                "Created_at": "2024-02-05T16:18:13+05:30",
+                "Total_cost": "1000.00",
                 "Discount": "0.00"
             }
         ]
