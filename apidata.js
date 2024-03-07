@@ -3,8 +3,8 @@ const {extract_data:ed} = require('./server.js')
 const fs = require('fs');
 const path = require('path');
 const shopify = new Shopify({
-    shopName: 'da7000.myshopify.com',
-    accessToken: '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',
+    shopName: ,
+    accessToken: ,
 });
 // api acess tokern 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
 // key 032a85d3237ea1804e1240396a8458ab
