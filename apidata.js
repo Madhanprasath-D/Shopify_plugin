@@ -6,9 +6,7 @@ const shopify = new Shopify({
     shopName: ,
     accessToken: ,
 });
-// api acess tokern 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
-// key 032a85d3237ea1804e1240396a8458ab
-// password 37c36588d6ea871ccece44f881ca45d4
+
 
 const data_fetch = async () => {
     await shopify.customer
